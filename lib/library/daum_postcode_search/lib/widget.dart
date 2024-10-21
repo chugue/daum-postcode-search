@@ -74,7 +74,7 @@ class _DaumPostcodeSearchState extends State<DaumPostcodeSearch> {
     if (isServerRunning) {
       result = InAppWebView(
         initialUrlRequest: URLRequest(
-          url: Uri.parse(
+          url: WebUri(
             "http://localhost:8080/${widget.assetPath}",
           ),
         ),
